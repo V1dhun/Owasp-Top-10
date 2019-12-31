@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+<html>
 <body>
 <center>
 <fieldset>
-<legend>IMG viewer</legend>
+<legend>Dashboard</legend>
+</br>
+<?php
+setcookie("session", serialize(array('username'=>'guest','passwd'=>'guest')));
 
-<!-- header Injection 
+$cookie = unserialize($_COOKIE['session']);
 
-proof of concept : curl -i http://0 --header "host:example.com"   
-
--->
-<img width="500" src="http://<?php echo $_SERVER['HTTP_HOST']?>/img.png" >
+if ($cookie['username'] == "admin" && $cookie['passwd'] == "admin") {
+    echo "Hello Admin!";
+} else {
+    echo "Hello Guest!";
+}
+?>
 </fieldset>
 </center>
 </body>
