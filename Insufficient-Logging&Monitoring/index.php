@@ -1,9 +1,3 @@
-<?php
-if($_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERVER['access.log'])){
-        header( 'HTTP/1.1 403 Forbidden');
-        die( header( 'location: /' ) );
-    }
-?>
 <!DOCTYPE html>
 <html>
 <body>
