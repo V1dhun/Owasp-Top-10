@@ -29,7 +29,6 @@ Check Stock Product form is vulnerable for SSRF attack
 <option value="http://10.0.0.3">Laptop</option>
 
 ```
-* Then submit
 
 ### Fix 
 
