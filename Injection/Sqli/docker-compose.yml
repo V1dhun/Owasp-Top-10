@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: www/
+    ports:
+      - "8000:80"
+    network_mode: bridge
+  db:
+    build: db/
+    ports:
+      - "3306:3306"
+    network_mode: bridge
