@@ -15,7 +15,7 @@ refers : https://portswigger.net/web-security/ssrf
 
 ### Issue
 
-Check Product form is vulnerable for SSRF attack
+Check Stock Product form is vulnerable for SSRF attack
 
 ### Expolit 
 
@@ -29,7 +29,6 @@ Check Product form is vulnerable for SSRF attack
 <option value="http://10.0.0.3">Laptop</option>
 
 ```
-* Then submit
 
 ### Fix 
 
