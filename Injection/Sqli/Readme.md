@@ -18,3 +18,6 @@ SQLi vulnerability allowing login bypass
 
 In username : ``' OR 1=1 -- `` and submit.
 
+### Fix
+
+Added `mysqli_real_escape_string()` to input parameters
