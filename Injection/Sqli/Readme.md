@@ -16,7 +16,7 @@ SQLi vulnerability allowing login bypass
 
 ### Expolit
 
-In username : ``' OR 1=1 -- `` and submit.
+In username : ``' OR 1=1 -- [space]`` and submit.
 
 ### Fix
 
