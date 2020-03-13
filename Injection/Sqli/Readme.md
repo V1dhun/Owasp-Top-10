@@ -10,6 +10,13 @@ refers :  https://portswigger.net/web-security/sql-injection
 $ docker-compose -d up --build
 $ bash run.sh
 ```
+### To Check
+
+```bash
+$ curl -I 0:8000
+
+```
+
 ### Issue 
 
 SQLi vulnerability allowing login bypass
